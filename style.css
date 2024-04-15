@@ -7,7 +7,6 @@
     width: 100%;
     height: 500px;
     background-image: url(./Picture/slider-bg.jpg.webp);
-    /* background-color: #0d0d0d; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +16,7 @@
     z-index: 3;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #444 !important;
 }
 .container{
     max-width: 1500px;
@@ -38,18 +38,25 @@
     border: 0;
     font-weight: bolder;
 }
+.basliq_esas h1{
+    animation: ani 5s linear infinite;
+    animation-fill-mode: both;
+}
+@keyframes ani{
+    to{
+        transform: rotateY(360deg);
+    }
+}
 
 .ikinci_hisse{
     width: 100%;
     min-height: 150px;
-    font-size: 30px;
-    font-weight: 900;
     text-align: center;
 }
 .ikinci_hisse_esas{
     width: 100%;
     min-height: 280px;
-    box-shadow: 0px 0px 19px rgba(0,0,0,1);
+    box-shadow: 0px 0px 19px rgba(0,0,0,0.3);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -63,6 +70,15 @@
     margin: 0 auto;
     padding: 20px;
 }
+.ikinci_hisse_esas > div > h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+.ikinci_hisse_esas > div > span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 
 
 .qutular{
@@ -71,18 +87,10 @@
     margin: 0 auto;
 }
 .qutu_esas_qutular{
-    width: 350px;
-    height: 300px;
+    width: 30%;
+    min-height: 300px;
     background-color: white;
-}
-.qutu_esas_qutular > p{
-    text-transform: uppercase;
-    text-align: center;
-    color: #f16266;
-}
-.qutu_esas_qutular img{
-    width: 100%;
-    height: 80%;
+    box-shadow: 0px 0px 13px rgba(0,0,0, 0.3);
 }
 .qutu_esas{
     width: 100%;
@@ -91,4 +99,112 @@
     flex-wrap: wrap;
     gap: 70px 25px ; 
     margin: 0 auto;
+}
+.qutu_esas_qutular > p{
+    text-transform: uppercase;
+    text-align: center;
+    color: #f16266;
+    margin: 15px;
+}
+.qutu_esas_qutular img{
+    width: 100%;
+    height: 80%;
+}
+@media only screen and (max-width: 950px) {
+    .qutular{
+        width: 100%;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+    .qutu_esas_qutular{
+        width: 45%;
+        min-height: 300px;
+        background-color: white;
+        box-shadow: 0px 0px 13px rgba(0,0,0, 0.3);
+    }
+    .qutu_esas{
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px 25px ; 
+        margin: 0 auto;
+    }
+    .qutu_esas_qutular > p{
+        text-transform: uppercase;
+        text-align: center;
+        color: #f16266;
+        margin: 15px;
+    }
+    .qutu_esas_qutular img{
+        width: 100%;
+        height: 80%;
+    }
+   
+}
+@media only screen and (max-width: 700px) {
+    .qutular{
+        width: 100%;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+    .qutu_esas_qutular{
+        width: 100%;
+        min-height: 300px;
+        background-color: white;
+        box-shadow: 0px 0px 13px rgba(0,0,0, 0.3);
+    }
+    .qutu_esas{
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px 25px ; 
+        margin: 0 auto;
+    }
+    .qutu_esas_qutular > p{
+        text-transform: uppercase;
+        text-align: center;
+        color: #f16266;
+        margin: 15px;
+    }
+    .qutu_esas_qutular img{
+        width: 100%;
+        height: 80%;
+    }
+   
+}
+.son{
+    width: 100%;
+    height: 300px;
+    background-color: #f9f9f9;
+}
+.son_esas{
+    text-align: center;
+}
+.son_esas > button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 0;
+}
+
+.son_esas > button:hover{
+    background-color: #444;
+    border-radius: 2px;
+    color: white;
+}
+.son_esas > span{
+    color: #f16266;
+}
+.son_esas > a{
+    text-decoration: none;
+    color: black;
+}
+.son_esas{
+    padding-top: 40px !important;
+    margin-top: 40px;
 }
