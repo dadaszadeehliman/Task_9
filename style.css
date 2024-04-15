@@ -7,7 +7,7 @@
     width: 100%;
     height: 500px;
     background-image: url(./Picture/slider-bg.jpg.webp);
-    background-color: #0d0d0d;
+    /* background-color: #0d0d0d; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,11 +15,13 @@
     font-size: 30px;
     position: relative;
     z-index: 3;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .container{
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 110px;
     width: 100%;
 }
 .basliq_esas >h1,p,button{
@@ -45,9 +47,9 @@
     text-align: center;
 }
 .ikinci_hisse_esas{
-    width: 80%;
+    width: 100%;
     min-height: 280px;
-    box-shadow: 0px 0px 19px rgba(0,0,0,15);
+    box-shadow: 0px 0px 19px rgba(0,0,0,1);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -66,14 +68,27 @@
 .qutular{
     width: 100%;
     min-height: 500px;
+    margin: 0 auto;
 }
 .qutu_esas_qutular{
-    width: 30%;
+    width: 350px;
     height: 300px;
-    background-color: aqua;
+    background-color: white;
+}
+.qutu_esas_qutular > p{
+    text-transform: uppercase;
+    text-align: center;
+    color: #f16266;
+}
+.qutu_esas_qutular img{
+    width: 100%;
+    height: 80%;
 }
 .qutu_esas{
+    width: 100%;
+    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 70px 25px ; 
+    margin: 0 auto;
 }
